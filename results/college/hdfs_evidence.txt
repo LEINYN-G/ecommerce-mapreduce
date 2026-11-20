@@ -1,0 +1,47 @@
+HDFS EXECUTION EVIDENCE
+=======================
+
+1. HDFS INPUT FILE
+2026-11-20 16:14:58,175 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+-rw-r--r--   1 nisha supergroup      5.6 M 2026-11-20 11:23 /ecommerce/input/ecommerce_transactions_100k_synthetic.csv
+
+2. OUTPUT WITHOUT COMBINER
+2026-11-20 16:15:00,874 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 nisha supergroup          0 2026-11-20 11:29 /ecommerce/output_without_combiner/_SUCCESS
+-rw-r--r--   1 nisha supergroup    625.4 K 2026-11-20 11:29 /ecommerce/output_without_combiner/part-00000
+
+3. OUTPUT WITH COMBINER
+2026-11-20 16:15:03,332 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 nisha supergroup          0 2026-11-20 11:36 /ecommerce/output_with_combiner/_SUCCESS
+-rw-r--r--   1 nisha supergroup    625.4 K 2026-11-20 11:36 /ecommerce/output_with_combiner/part-00000
+
+4. INPUT RECORD COUNT
+2026-11-20 16:15:05,791 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+100001
+
+5. CUSTOMER OUTPUT COUNT WITHOUT COMBINER
+2026-11-20 16:15:08,573 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+11997
+
+6. CUSTOMER OUTPUT COUNT WITH COMBINER
+2026-11-20 16:15:11,287 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+11997
+
+7. SAMPLE OUTPUT WITHOUT COMBINER
+2026-11-20 16:15:14,002 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+CUST00001	12,889812.87,11,1,3,861628.73,PREMIUM_FREQUENT
+CUST00002	8,564708.85,6,2,2,510624.32,PREMIUM_FREQUENT
+CUST00003	3,12831.04,3,0,0,12831.04,NORMAL
+CUST00004	13,733878.00,12,1,1,716252.28,PREMIUM_FREQUENT
+CUST00005	15,487953.30,13,2,2,395379.84,PREMIUM_FREQUENT
+
+8. SAMPLE OUTPUT WITH COMBINER
+2026-11-20 16:15:16,757 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+CUST00001	12,889812.87,11,1,3,861628.73,PREMIUM_FREQUENT
+CUST00002	8,564708.85,6,2,2,510624.32,PREMIUM_FREQUENT
+CUST00003	3,12831.04,3,0,0,12831.04,NORMAL
+CUST00004	13,733878.00,12,1,1,716252.28,PREMIUM_FREQUENT
+CUST00005	15,487953.30,13,2,2,395379.84,PREMIUM_FREQUENT

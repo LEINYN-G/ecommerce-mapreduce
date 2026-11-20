@@ -1,0 +1,15 @@
+FINAL HADOOP OUTPUT VALIDATION
+================================
+
+Without and With Combiner:
+Files results/local/without_combiner/hadoop_output.tsv and results/local/with_combiner/hadoop_output.tsv are identical
+
+Customer Records:
+11997 results/local/without_combiner/hadoop_output.tsv
+11997 results/local/with_combiner/hadoop_output.tsv
+
+Customer Classification:
+NORMAL 536
+FREQUENT 1830
+PREMIUM_FREQUENT 9353
+PREMIUM 278

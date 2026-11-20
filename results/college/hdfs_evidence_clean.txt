@@ -1,0 +1,28 @@
+HDFS EXECUTION EVIDENCE (CLEAN)
+================================
+
+1. INPUT FILE
+Found 1 items
+-rw-r--r--   1 nisha supergroup      5.6 M 2026-11-20 11:23 /ecommerce/input/ecommerce_transactions_100k_synthetic.csv
+
+2. OUTPUT WITHOUT COMBINER
+Found 2 items
+-rw-r--r--   1 nisha supergroup          0 2026-11-20 11:29 /ecommerce/output_without_combiner/_SUCCESS
+-rw-r--r--   1 nisha supergroup    625.4 K 2026-11-20 11:29 /ecommerce/output_without_combiner/part-00000
+
+3. OUTPUT WITH COMBINER
+Found 2 items
+-rw-r--r--   1 nisha supergroup          0 2026-11-20 11:36 /ecommerce/output_with_combiner/_SUCCESS
+-rw-r--r--   1 nisha supergroup    625.4 K 2026-11-20 11:36 /ecommerce/output_with_combiner/part-00000
+
+4. INPUT LINE COUNT (INCLUDING HEADER)
+100001
+
+5. CUSTOMER COUNT WITHOUT COMBINER
+11997
+
+6. CUSTOMER COUNT WITH COMBINER
+11997
+
+7. OUTPUT COMPARISON
+Files /dev/fd/63 and /dev/fd/62 are identical

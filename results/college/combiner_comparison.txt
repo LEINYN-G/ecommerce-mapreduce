@@ -1,0 +1,26 @@
+HADOOP COMBINER EXPERIMENT
+
+Dataset: 100,000 synthetic e-commerce transactions
+
+WITHOUT COMBINER:
+Reducer Input Records: 100000
+
+WITH COMBINER:
+Combiner Input Records: 100000
+Combiner Output Records: 23624
+Reducer Input Records: 23624
+
+Intermediate Record Reduction:
+76.376%
+
+Final Customer Records:
+11997 (both experiments)
+
+Final Outputs:
+Identical
+
+Conclusion:
+Combiner reduced intermediate records processed by the
+Reducer by 76.376%, while preserving final output correctness.
+This is record-count reduction, not a direct measurement
+of network bytes saved.

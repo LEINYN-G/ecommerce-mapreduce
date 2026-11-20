@@ -1,0 +1,27 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Duplicate customer summaries (identical to Hadoop outputs)
+results/local/with_combiner/customer_summary.tsv
+results/local/without_combiner/customer_summary.tsv
